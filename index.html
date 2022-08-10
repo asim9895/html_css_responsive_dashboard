@@ -8,10 +8,13 @@
 		<!--material icons cdn-->
 		<link
 			rel="stylesheet"
-			href="https://fonts.googleapis.com/icons?family=Material+Icons"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+			integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
 		/>
 		<!-- in app style css-->
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="./style.css" />
 	</head>
 	<body>
 		<div class="container">
@@ -20,14 +23,141 @@
 				<!-- sidebar top section starts -->
 				<div class="top">
 					<div class="logo">
-						<img src="" alt="" />
+						<img src="./assets/logo.svg" alt="logo" />
 						<h1>Eli<span class="danger">te</span></h1>
 					</div>
-					<div class="close" id="close-btn"></div>
+					<div class="close" id="close-btn">
+						<i class="fa-solid fa-xmark"></i>
+					</div>
 				</div>
 				<!-- sidebar top section ends -->
+
+				<!-- sidebar list starts -->
+				<div class="sidebar_list">
+					<a href="#" class="active">
+						<i class="fa-solid fa-grip"></i>
+						<h3>Dashboard</h3>
+					</a>
+					<a href="#">
+						<i class="fa-regular fa-user"></i>
+						<h3>Customers</h3>
+					</a>
+					<a href="#">
+						<i class="fa-regular fa-file-lines"></i>
+						<h3>Orders</h3>
+					</a>
+					<a href="#">
+						<i class="fa-solid fa-chart-area"></i>
+						<h3>Analytics</h3>
+					</a>
+					<a href="#">
+						<i class="fa-regular fa-message"></i>
+						<h3>Messages</h3>
+						<span class="message_count">26</span>
+					</a>
+					<a href="#">
+						<i class="fa-solid fa-list-check"></i>
+						<h3>Products</h3>
+					</a>
+					<a href="#" class="active">
+						<i class="fa-solid fa-clipboard-question"></i>
+						<h3>Reports</h3>
+					</a>
+					<a href="#">
+						<i class="fa-solid fa-gear"></i>
+						<h3>Settings</h3>
+					</a>
+					<a href="#">
+						<i class="fa-solid fa-plus"></i>
+						<h3>Add Product</h3>
+					</a>
+					<a href="#">
+						<i class="fa-solid fa-power-off"></i>
+						<h3>Logout</h3>
+					</a>
+				</div>
+				<!-- sidebar list ends -->
 			</aside>
 			<!--sidebar ends -->
+
+			<!--main content starts -->
+			<main>
+				<h1 class="title">Dashboard</h1>
+
+				<div class="date">
+					<input type="date" />
+				</div>
+
+				<div class="insights">
+					<!-- card 1 starts-->
+					<div class="sales">
+						<i class="fa-solid fa-chart-area"></i>
+						<div class="middle">
+							<div class="left">
+								<h1>Total sales</h1>
+								<h1>$25,034</h1>
+							</div>
+
+							<div class="progress">
+								<svg>
+									<circle cx="38" cy="38" r="36"></circle>
+								</svg>
+								<div class="number">
+									<p>81</p>
+								</div>
+							</div>
+						</div>
+						<small class="text-muted">24 hours ago</small>
+					</div>
+					<!-- card 1 ends -->
+
+					<!-- card 2 starts-->
+					<div class="sales">
+						<i class="fa-solid fa-chart-area"></i>
+						<div class="middle">
+							<div class="left">
+								<h1>Total expenses</h1>
+								<h1>$15,034</h1>
+							</div>
+
+							<div class="progress">
+								<svg>
+									<circle cx="38" cy="38" r="36"></circle>
+								</svg>
+								<div class="number">
+									<p>81</p>
+								</div>
+							</div>
+						</div>
+						<small class="text-muted">24 hours ago</small>
+					</div>
+					<!-- card 2 ends -->
+
+					<!-- card 3 starts-->
+					<div class="sales">
+						<i class="fa-solid fa-chart-area"></i>
+						<div class="middle">
+							<div class="left">
+								<h1>Total income</h1>
+								<h1>$125,034</h1>
+							</div>
+
+							<div class="progress">
+								<svg>
+									<circle cx="38" cy="38" r="36"></circle>
+								</svg>
+								<div class="number">
+									<p>81</p>
+								</div>
+							</div>
+						</div>
+						<small class="text-muted">24 hours ago</small>
+					</div>
+					<!-- card 3 ends -->
+				</div>
+			</main>
+
+			<!--main content ends-->
 		</div>
 	</body>
 </html>
